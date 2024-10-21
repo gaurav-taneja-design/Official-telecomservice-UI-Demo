@@ -1,0 +1,537 @@
+:root {
+    --font-family-redhat: "Red Hat Display", sans-serif;
+
+    --primary-text-color: #202020;
+    --primary-white-color: #ffffff;
+    --primary-heading-color: #331070;
+
+    /* skyblue */
+    --secondary-text-color: #20a7eb;
+
+    /* navyblue */
+    --secondary-common-color: #004789;
+
+    /* button */
+    --primary-bg-color: #75378b;
+}
+
+/* reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-redhat);
+    background: var(--body-bg-color);
+}
+
+ul,
+li,
+a {
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+/* headings */
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primary-text-color);
+    letter-spacing: 0.1px;
+}
+
+/* common buttons */
+
+.small-size-btn {
+    width: 100px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navy-btn {
+    border: 1px solid var(--secondary-common-color);
+    color: var(--secondary-common-color);
+}
+
+.purple-btn {
+    background: var(--primary-bg-color);
+    color: var(--primary-white-color);
+    border: none;
+}
+
+/* navbar */
+
+.nav-section .navbar-nav li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+
+.nav-section .navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--secondary-text-color);
+}
+
+/* banner section */
+
+.banner-section {
+    background-image: url(../img/banner-section.png);
+    height: 854px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.banner-content-box h1 {
+    color: var(--primary-white-color);
+    font-size: 43px;
+}
+
+.banner-content-box .banner-filter-box {
+    background: #1e4d90;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #2968ac;
+    width: 97%;
+}
+
+.banner-filter-box .nav-tabs .nav-link {
+    color: #c7c7c7;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.banner-filter-box .nav-tabs .nav-link.active {
+    color: var(--secondary-text-color);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--secondary-text-color);
+}
+
+.banner-filter-box .location-selector input {
+    height: 56px;
+    width: 100%;
+    color: var(--primary-white-color);
+    border: 1px solid var(--primary-white-color);
+    background: transparent;
+    border-radius: 4px;
+    padding: 0px 26px;
+}
+.banner-filter-box .location-selector input:placeholder {
+    color: var(--primary-white-color);
+}
+
+.banner-filter-box .service-selector .data-type,
+.search-here {
+    width: 30%;
+}
+
+.banner-filter-box .service-selector .service-type {
+    width: 40%;
+}
+
+.banner-filter-box .service-selector select {
+    background: #3970a5;
+    border: 1px solid #4c8fce;
+    border-radius: 4px;
+    color: var(--primary-white-color);
+    height: 54px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.banner-filter-box .service-selector .search-here button {
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 54px;
+}
+
+.banner-filter-box .select-location label {
+    color: var(--primary-white-color);
+}
+
+/* services section */
+
+.services-section {
+    padding: 40px;
+    background-image: url(../img/service-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.services-section h2 {
+    color: var(--primary-heading-color);
+}
+
+.services-section p {
+    line-height: 1.8;
+}
+
+.service-features {
+    max-width: 900px;
+    margin: auto;
+    gap: 45px;
+}
+
+.service-features .service-plan-box {
+    box-shadow: 0px 0px 22px 2px #0000000d;
+    width: 30%;
+    border-radius: 12px;
+    background: var(--primary-white-color);
+}
+
+.service-features .service-plan-box img {
+    width: 134px;
+    height: 134px;
+}
+
+.service-features .service-plan-box span {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--secondary-text-color);
+    text-decoration: underline;
+}
+
+/* abous us section*/
+
+.about-telecey-section {
+    padding: 40px;
+}
+
+.about-telecey-section h2 {
+    color: var(--primary-heading-color);
+}
+
+.about-telecey-section p {
+    line-height: 1.8;
+}
+
+/* flow and service section */
+
+.flow-service-section {
+    padding: 60px 0px;
+    background: #ebedeb;
+}
+
+.workflow-main {
+    padding: 40px 0px;
+}
+
+.workflow-main h2 {
+    color: var(--primary-heading-color);
+}
+
+.workflow-main .flow-box {
+    padding: 40px 22px;
+    box-shadow: 0px 0px 22px 2px #0000000d;
+    border-radius: 12px;
+    width: 24%;
+    background: var(--primary-white-color);
+}
+
+.workflow-main .flow-box img {
+    width: 70px;
+    height: 70px;
+}
+
+.workflow-main .flow-box span {
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--secondary-text-color);
+    margin: 5px 0px;
+}
+
+.workflow-main .flow-box p {
+    font-size: 16px;
+}
+
+.workflow-main .flow-box a {
+    max-width: 168px;
+    height: 56px;
+}
+
+.workflow-main .flow-box a:hover {
+    background: var(--primary-bg-color);
+    color: var(--primary-white-color);
+    border: none;
+}
+
+.subscribe-email .subscribe-email-btn {
+    background: var(--primary-white-color);
+    width: max-content;
+    border-radius: 4px;
+    border: 1px solid #dfe6f1;
+}
+
+.subscribe-email .subscribe-email-btn input::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.subscribe-email .subscribe-email-btn input:focus {
+    border: none;
+    outline: none;
+}
+
+.subscribe-email .subscribe-email-btn a {
+    width: 116px;
+    height: 56px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.services-main-section {
+}
+
+.services-card-main {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.services-card-main .services-box {
+    width: 49%;
+    padding: 30px;
+    border-radius: 12px;
+    background: var(--primary-white-color);
+}
+
+.services-card-main .services-box img {
+    max-width: 426px;
+    width: 100%;
+}
+
+.services-card-main .services-box P {
+    font-size: 22px;
+}
+
+/* latest blogs section */
+
+.latest-blogs-section {
+    background: #ebedeb;
+    padding: 40px;
+}
+
+.latest-blogs-section h2 {
+    color: var(--primary-heading-color);
+}
+
+.latest-blogs-section .blogs-box {
+    padding: 16px 16px 20px 16px;
+    border-radius: 12px;
+    width: 32%;
+    background: var(--primary-white-color);
+}
+
+.latest-blogs-section .blogs-box .blog-title-here {
+    top: 58px;
+    left: 54px;
+}
+
+.latest-blogs-section .blogs-box .blog-title-here p {
+    text-align: center;
+    background-color: rgba(5, 49, 91, 0.7);
+    border-radius: 12px;
+    padding: 21px 28px;
+    margin: 10px;
+    color: var(--primary-white-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.latest-blogs-section .blogs-box .blog-title-here p span {
+    color: var(--secondary-text-color);
+    font-size: 24px;
+}
+
+.latest-blogs-section .blogs-box .post-date-blog {
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondary-common-color);
+}
+
+.latest-blogs-section .blogs-box span {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-text-color);
+}
+
+.latest-blogs-section .blogs-box p {
+    font-size: 16px;
+}
+
+.latest-blogs-section .blogs-box a {
+    width: 176px;
+    height: 56px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.latest-blogs-section .blogs-box a:hover {
+    color: var(--primary-white-color);
+    background: var(--primary-bg-color);
+    border: none;
+}
+
+.latest-blogs-section .select-service-btn a {
+    width: 176px;
+    height: 56px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.select-service-btn a:hover {
+    color: var(--primary-white-color);
+    background: var(--primary-bg-color);
+    border: none;
+}
+
+.footersection {
+    background-image: url(../img/footerbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footersection p {
+    font-size: 24px;
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.footersection ul a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-white-color);
+    margin-bottom: 10px;
+}
+
+.footersection span {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    background: var(--secondary-common-color);
+}
+
+.blog-box-here {
+    background-image: url(../img/tele-blog.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 246px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* responsive handle */
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .services-card-main .services-box {
+        width: 48%;
+    }
+}
+
+@media (max-width: 992px) {
+    .banner-section {
+        background-size: cover;
+        height: auto;
+    }
+    .services-card-main .services-box {
+        width: 100%;
+    }
+
+    .service-features {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 32px;
+    }
+
+    .about-telecey-section,
+    .services-section {
+        padding: 0px;
+    }
+    .services-section {
+        padding-top: 40px;
+    }
+
+    .about-telecey-section,
+    .flow-service-section {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .latest-blogs-section,
+    .workflow-main {
+        padding: 20px 0px;
+    }
+
+    .services-card-main .services-box {
+        width: 100%;
+    }
+
+    .workflow-box-main {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .workflow-main .flow-box,
+    .service-features .service-plan-box,
+    .latest-blogs-section .blogs-box {
+        width: 100%;
+    }
+
+    .banner-filter-box .service-selector select {
+        font-size: 11px;
+    }
+    .banner-filter-box .service-selector .search-here button {
+        font-size: 13px;
+    }
+
+    .responsive-spacing,
+    .workflow-box-main {
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+    }
+
+    .banner-content-box h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 400px) {
+    .subscribe-email .subscribe-email-btn {
+        width: 100%;
+    }
+}
